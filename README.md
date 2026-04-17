@@ -60,4 +60,4 @@ El análisis teorico es el medio por el cual un programador puede predecir y ent
 ### ¿Qué complejidad es más costosa y por qué?
 ### ¿Qué aprendieron del análisis?
 ### ¿Qué les sorprendió más al ver el código?
-### Lo que ustedes crean conveniente
+### ¿Lo que ustedes crean conveniente
