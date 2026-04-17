@@ -41,6 +41,7 @@ Es el proceso por el cual se manipulan variables independientes bajo ciertas con
 ### ¿Qué es la notación Big O?
 Es la representacion de un algoritmo de acuerdo al tiempo de ejecucion y uso de memoria del programa , para poder completar un algoritmo planteado .Implicando el desempeño del programa en los peores caos, facilitando a un algortimo el crecimiento en funcion de la entrada del algoritmo.
 
+![Texto alternativo](imagenes/example.jpg)
 
 ### Tipos de notaciones
 
