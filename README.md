@@ -43,8 +43,11 @@ Es la representacion de un algoritmo de acuerdo al tiempo de ejecucion y uso de 
 
 ### Tipos de notaciones
 
-1. Mejor caso
-   
+1. Mejor caso:
+
+   Representa el Límite inferior.El algoritmo no será más rápido que esto.
+El número que buscas es el primero de la lista. Solo haces una operación.
+Terminaste en un instante
 2. Peor caso
 3. Caso promedio
 4. Big O, Omega (Ω), Theta (Θ)
