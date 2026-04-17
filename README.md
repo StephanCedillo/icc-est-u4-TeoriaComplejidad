@@ -34,6 +34,7 @@ Es el factor en funcion al tiempo de cuando un numero de operaciones es ejecutda
 ### Análisis teórico
 El análisis teorico es el medio por el cual un programador puede predecir y entender el comportamiento del sistema que se va realizar sin necesidad de escribir ni una sola linea de codigo. Basándose en el rigor matemático donde definimos conceptos claro, dejamos de lado la intuición y basar cada paso que demos en teorías anteriormente planeadas
 ### Análisis experimental
+Es el proceso por el cual se manipulan variables independientes bajo ciertas condiciones. Es el medio que permite medir el funcionamiento de un programa en computadoras de distintas capacidades (desde máquinas antiguas hasta las más actuales), para que el programador pueda determinar si el algoritmo planteado requiere ajustes antes de llegar a su versión final.
 
 ## Notación de Complejidad
 
