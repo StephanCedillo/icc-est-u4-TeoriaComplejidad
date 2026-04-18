@@ -54,25 +54,8 @@ Terminaste en un instante
 3. Caso promedio
 4. Big O, Omega (Ω), Theta (Θ)
 
-## Ejemplos Notaciones
 
-
-1. O(1) – Constante
-   * Definicion:
-   * Ejemplo:ComplejidadConstante.java
-2. O(n) – Lineal
-   * Definicion:
-   * Ejemplo:ComplejidadLineal.java
-3. O(n²) – Cuadrática
-   * Definicion:
-   * Ejemplo:ComplejidadCuadratica.java
-4. O(log n) – Logarítmica
-   * Definicion:
-   * Ejemplo:ComplejidadLogaritmica.java
-5. O(n log n) – N log N
-   * Definicion:
-   * Ejemplo:ComplejidadLogaritmicaN.java
-
+Puedes ver la [](./EjemploComplejidad/manual.md).
 ## Conclusiones
 
 ### ¿Qué complejidad es más costosa y por qué?
