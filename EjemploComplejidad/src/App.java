@@ -1,5 +1,6 @@
 import Ejemplos.ComplejidadConstante;
 import Ejemplos.ComplejidadCuadratica;
+import Ejemplos.ComplejidadLineal;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -8,6 +9,9 @@ public class App {
 
         ComplejidadCuadratica ejemplo2 = new ComplejidadCuadratica();
         System.out.println(ejemplo2);
+
+        ComplejidadLineal ejemplo3 = new ComplejidadLineal();
+        System.out.println(ejemplo3);
 
     }
     
