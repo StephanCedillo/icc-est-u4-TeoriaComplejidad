@@ -6,6 +6,8 @@ public class ComplejidadCuadratica {
     public void metodoComplejidadCuadratica(){
         int [] arreglo = {4,3,2,5,1,7,6};
         System.out.println(Arrays.toString(arreglo));
+        // El tiempo aumenta al cuadrado del tamaño de entrada, frecuente en algoritmos ineficientes
+        // Usualmente se usa con bucles anidados 
         for ( int i = 0 ; i < arreglo.length; i++){
             for (int j = 0; j <arreglo.length-i-1; j++){
                 if (arreglo [j] > arreglo [j+1]){

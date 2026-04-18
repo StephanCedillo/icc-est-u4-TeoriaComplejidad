@@ -5,6 +5,7 @@ public class ComplejidadLineal {
         int sum = 0;
         int [] arreglo1 = {1,3,5,6,2,8};
         System.out.println(Arrays.toString(arreglo1));
+        //El tiempo de ejecucion aumenta cada vez tengamos mas datos
         for (int i = 0; i < arreglo1.length;i++){
              sum += arreglo1[i];
         }

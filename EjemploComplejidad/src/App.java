@@ -40,14 +40,14 @@ public class App {
                     break;
                 case 2:
                     System.out.println("Complejidad Lineal - Prueba");    
-                    ejemplo2.metodoComplejidadLineal();  
+                    ejemplo2.metodoComplejidadLineal();
                     break;
                 case 3:
                     System.out.println("Complejidad Cuadratica - Prueba");    
                     ejemplo3.metodoComplejidadCuadratica();   
                     break;
                 case 4:
-                    System.out.println("Complejidad Logaritmica - Prueba");    
+                    System.out.println("Compljidad Logaritmica - Prueba");    
                     ejemplo4.metodoComplejidadLogaritmica();      
                     break;
                 case 5: 
@@ -60,6 +60,8 @@ public class App {
                 default:
                     break;
             }
+            System.out.print("Ingresar la opcion del menu: ");
+            numeroMenu=leer.nextByte();
         }
 
     }
