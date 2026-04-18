@@ -55,7 +55,7 @@ Terminaste en un instante
 4. Big O, Omega (Ω), Theta (Θ)
 
 
-Puedes ver la [](./EjemploComplejidad/manual.md).
+Puedes ver la los ejemplos [Ejemplos Java](./EjemploComplejidad/Ejemplos.md).
 ## Conclusiones
 
 ### ¿Qué complejidad es más costosa y por qué?
