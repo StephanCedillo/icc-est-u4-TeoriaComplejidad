@@ -39,9 +39,12 @@ Es el proceso por el cual se manipulan variables independientes bajo ciertas con
 ## Notación de Complejidad
 
 ### ¿Qué es la notación Big O?
-Es la representacion de un algoritmo de acuerdo al tiempo de ejecucion y uso de memoria del programa , para poder completar un algoritmo planteado .Implicando el desempeño del programa en los peores caos, facilitando a un algortimo el crecimiento en funcion de la entrada del algoritmo.
+Estas son herramientas de análisis para determinar el tiempo y el espacio que consume la ejecución de un programa.
+
+ Según estos factores, se les asigna una notación: Big O representa el límite superior o el peor caso posible, mientras que Big Ω (Omega) representa el límite inferior o el mejor caso posible.
 
 ![Texto alternativo](imagenes/example.jpg)
+
 
 ### Tipos de notaciones
 
@@ -51,6 +54,9 @@ Es la representacion de un algoritmo de acuerdo al tiempo de ejecucion y uso de 
 El número que buscas es el primero de la lista. Solo haces una operación.
 Terminaste en un instante
 2. Peor caso
+
+   Es la representacion de un algoritmo de acuerdo al tiempo de ejecucion y uso de memoria del programa , para poder completar un algoritmo planteado .Implicando el desempeño del programa en los peores caos, facilitando a un algortimo el crecimiento en funcion de la entrada del algoritmo.
+   
 3. Caso promedio
 4. Big O, Omega (Ω), Theta (Θ)
 
