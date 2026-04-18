@@ -3,7 +3,7 @@ package Ejemplos;
 import java.util.Arrays;
 
 public class ComplejidadCuadratica {
-    public ComplejidadCuadratica(){
+    public void metodoComplejidadCuadratica(){
         int [] arreglo = {4,3,2,5,1,7,6};
         System.out.println(Arrays.toString(arreglo));
         for ( int i = 0 ; i < arreglo.length; i++){
