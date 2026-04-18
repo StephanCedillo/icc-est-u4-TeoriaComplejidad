@@ -54,8 +54,8 @@ Terminaste en un instante
 3. Caso promedio
 4. Big O, Omega (Ω), Theta (Θ)
 
-
 Puedes ver la los ejemplos [Ejemplos Java](./EjemploComplejidad/Ejemplos.md).
+
 ## Conclusiones
 
 ### ¿Qué complejidad es más costosa y por qué?
