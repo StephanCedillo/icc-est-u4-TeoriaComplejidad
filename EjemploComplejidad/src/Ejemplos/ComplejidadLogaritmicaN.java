@@ -4,34 +4,43 @@ import java.util.Arrays;
 
 public class ComplejidadLogaritmicaN {
 
-    public void metodoComplejidadLogaritmicaN() {
+   public void metodoNLogN() {
         int[] datos = {9, 4, 8, 3, 1, 2, 5, 7, 6};
-        int objetivo = 5;
 
-        // Ordenar el arreglo ( este es un requisito inicial )
-        Arrays.sort(datos);
+        mergeSort(datos, 0, datos.length - 1);
 
-        int left = 0;
-        int right = datos.length - 1;
-        int resultado = -1;
+        System.out.println(Arrays.toString(datos));
+    }
 
-        while (left <= right) {
-            int mid = left + (right - left) / 2;
+    private void mergeSort(int[] arr, int left, int right) {
+        if (left < right) {
+            int mid = (left + right) / 2;
 
-            if (datos[mid] == objetivo) {
-                resultado = mid;
-                break;
-            } else if (datos[mid] < objetivo) {
-                left = mid + 1;
+            mergeSort(arr, left, mid);
+            mergeSort(arr, mid + 1, right);
+
+            merge(arr, left, mid, right);
+        }
+    }
+
+    private void merge(int[] arr, int left, int mid, int right) {
+        int[] temp = new int[right - left + 1];
+
+        int i = left, j = mid + 1, k = 0;
+
+        while (i <= mid && j <= right) {
+            if (arr[i] <= arr[j]) {
+                temp[k++] = arr[i++];
             } else {
-                right = mid - 1;
+                temp[k++] = arr[j++];
             }
         }
 
-        if (resultado != -1) {
-            System.out.println("Elemento " + objetivo + " encontrado en el índice " + resultado);
-        } else {
-            System.out.println("Elemento no encontrado");
+        while (i <= mid) temp[k++] = arr[i++];
+        while (j <= right) temp[k++] = arr[j++];
+
+        for (int m = 0; m < temp.length; m++) {
+            arr[left + m] = temp[m];
         }
     }
 }

@@ -1,70 +1,126 @@
-# Teoria de la Complejidad 
-Nombres:
-* Stephan Cedillo
-* Alfonso Auquilla
-* Andres Zuñiga
-* Christopher Carrangui
-* Oliver Valdiviezo 
+# Teoría de la Complejidad
 
-## ¿Que és?
-La teoria de la complejidad esta basada en ideas y modelos  fundamentales nacidas del cálculo y de la técnicas de la ingeniería de estructura de datos
+## Integrantes
+- Stephan Cedillo  
+- Alfonso Auquilla  
+- Andrés Zúñiga  
+- Christopher Carrangui  
+- Oliver Valdiviezo  
 
-Esta teoria estudia los recursos que se requieren para  resolver problemas como el tiempo y el espacio que requiera el mismo
+---
+
+## ¿Qué es?
+
+La teoría de la complejidad es una rama de la informática que estudia los recursos necesarios para resolver un problema mediante un algoritmo, principalmente el **tiempo de ejecución** y el **uso de memoria**.
+
+Se basa en modelos matemáticos y conceptos provenientes del cálculo y del análisis de algoritmos.
+
+---
 
 ## Eficiencia de algoritmos
 
 ### Coste temporal
+Es la medida de cuánto tiempo tarda un algoritmo en ejecutarse dependiendo del tamaño de la entrada.
 
-La eficiencia de los algoritmos y su coste temporal es una medida de cuánto tiempo tarda un programa en ejecutarse
+---
 
 ### Coste espacial
-Representa la cantidad de memoria que necesita  una algoritmo para completar la ejecución,se expresa en notación Big O, una complejidad espacial de O(1), lo que indica un uso constante del espacio.
+Representa la cantidad de memoria que necesita un algoritmo para ejecutarse.
+
+Se expresa mediante notación Big O. Por ejemplo, una complejidad espacial **O(1)** indica que el uso de memoria es constante.
+
+---
 
 ## Factores de tiempo de ejecución
 
 ### Factores propios
+Son los factores relacionados directamente con la lógica del algoritmo, como:
+- Estructuras de control (bucles, condiciones)
+- Tipo de algoritmo
 
-Los factores propios son puramente la logica del codigo y el codigo en si mismo, siendo constante que no importa en que maquina se ejecute.
-Datos curiosos: 
-terria de np=p
+Estos no dependen de la máquina donde se ejecuta el programa.
+
+---
 
 ### Factores circunstanciales
-Es el factor en funcion al tiempo de cuando un numero de operaciones es ejecutdada midiendo en segundos,milisegundos o nanosegundos.El programa mide que tan rapido va el programa, donde un O(n^2) va ir peor que un O(n).
+Son factores externos que afectan el tiempo de ejecución, como:
+- Hardware de la computadora
+- Lenguaje de programación
+- Compilador
+- Carga del sistema
+
+Estos factores se miden en tiempo real (segundos, milisegundos, etc.).
+
+---
 
 ### Análisis teórico
-El análisis teorico es el medio por el cual un programador puede predecir y entender el comportamiento del sistema que se va realizar sin necesidad de escribir ni una sola linea de codigo. Basándose en el rigor matemático donde definimos conceptos claro, dejamos de lado la intuición y basar cada paso que demos en teorías anteriormente planeadas
+Permite estudiar el comportamiento de un algoritmo sin necesidad de ejecutarlo.
+
+Se basa en el uso de matemáticas para estimar su eficiencia en función del tamaño de la entrada.
+
+---
+
 ### Análisis experimental
-Es el proceso por el cual se manipulan variables independientes bajo ciertas condiciones. Es el medio que permite medir el funcionamiento de un programa en computadoras de distintas capacidades (desde máquinas antiguas hasta las más actuales), para que el programador pueda determinar si el algoritmo planteado requiere ajustes antes de llegar a su versión final.
+Consiste en ejecutar el algoritmo en diferentes condiciones para medir su rendimiento real.
+
+Permite comparar algoritmos y validar el análisis teórico.
+
+---
 
 ## Notación de Complejidad
 
 ### ¿Qué es la notación Big O?
-Estas son herramientas de análisis para determinar el tiempo y el espacio que consume la ejecución de un programa.
 
- Según estos factores, se les asigna una notación: Big O representa el límite superior o el peor caso posible, mientras que Big Ω (Omega) representa el límite inferior o el mejor caso posible.
+La notación Big O es una herramienta que permite describir el comportamiento de un algoritmo en términos de tiempo o espacio a medida que crece el tamaño de la entrada.
 
-![Texto alternativo](imagenes/example.jpg)
+- **O (Big O)** → peor caso  
+- **Ω (Omega)** → mejor caso  
+- **Θ (Theta)** → caso promedio (aproximado)  
 
+---
 
-### Tipos de notaciones
+## Tipos de casos
 
-1. Mejor caso:
+### 🟢 Mejor caso
+Representa el escenario más favorable.  
+Ejemplo: encontrar un elemento en la primera posición de una lista.
 
-   Representa el Límite inferior.El algoritmo no será más rápido que esto.
-El número que buscas es el primero de la lista. Solo haces una operación.
-Terminaste en un instante
-2. Peor caso
+---
 
-   Es la representacion de un algoritmo de acuerdo al tiempo de ejecucion y uso de memoria del programa , para poder completar un algoritmo planteado .Implicando el desempeño del programa en los peores caos, facilitando a un algortimo el crecimiento en funcion de la entrada del algoritmo.
-   
-3. Caso promedio
-4. Big O, Omega (Ω), Theta (Θ)
+### Peor caso
+Representa el escenario más desfavorable.  
+Ejemplo: recorrer toda la lista para encontrar un elemento.
 
-Puedes ver la los ejemplos [Ejemplos Java](./EjemploComplejidad/Ejemplos.md).
+---
+
+### Caso promedio
+Es un valor intermedio entre el mejor y el peor caso.
+
+---
+
+## Ejemplos
+
+Puedes ver los ejemplos en Java aquí:  
+[Ejemplos de Complejidad](./EjemploComplejidad/Ejemplos.md)
+
+---
 
 ## Conclusiones
 
 ### ¿Qué complejidad es más costosa y por qué?
+La complejidad más costosa es **O(n²)**, ya que el número de operaciones crece muy rápidamente al aumentar el tamaño de los datos.
+
+---
+
 ### ¿Qué aprendieron del análisis?
-### ¿Qué les sorprendió más al ver el código?
-### ¿Lo que ustedes crean conveniente?
+Aprendimos a evaluar la eficiencia de los algoritmos y a entender cómo su rendimiento cambia según el tamaño de entrada.
+
+---
+
+### ¿Qué les sorprendió más?
+Que pequeños cambios en la estructura del algoritmo pueden afectar significativamente su rendimiento.
+
+---
+
+### Reflexión final
+El análisis de la complejidad es fundamental para desarrollar programas eficientes, especialmente cuando se trabaja con grandes volúmenes de datos.
