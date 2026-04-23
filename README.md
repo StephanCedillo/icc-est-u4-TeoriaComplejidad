@@ -81,7 +81,7 @@ La notación Big O es una herramienta que permite describir el comportamiento de
 
 ## Tipos de casos
 
-### 🟢 Mejor caso
+###  Mejor caso
 Representa el escenario más favorable.  
 Ejemplo: encontrar un elemento en la primera posición de una lista.
 
