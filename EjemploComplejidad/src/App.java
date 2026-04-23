@@ -8,19 +8,14 @@ public class App {
     public static void main(String[] args) throws Exception {
         Scanner leer = new Scanner(System.in);
         ComplejidadConstante ejemplo1 = new ComplejidadConstante();
-        System.out.println(ejemplo1);
 
         ComplejidadLineal ejemplo2 = new ComplejidadLineal();
-        System.out.println(ejemplo2);
 
         ComplejidadCuadratica ejemplo3 = new ComplejidadCuadratica();
-        System.out.println(ejemplo3);
 
         ComplejidadLogaritmica ejemplo4= new ComplejidadLogaritmica();
-        System.out.println(ejemplo4);
 
         ComplejidadLogaritmicaN ejemplo5= new ComplejidadLogaritmicaN();
-        System.out.println(ejemplo5);
 
         System.out.println("Menu de opciones:\n"+
             "1.ComplejidadConstante \n" +
@@ -52,7 +47,7 @@ public class App {
                     break;
                 case 5: 
                     System.out.println("Complejidad O(n log n) - Prueba");    
-                    ejemplo5.metodoComplejidadLogaritmicaN();     
+                    ejemplo5.metodoNLogN();    
                     break;
                 case 6:    
                     System.out.println("Salir del programa");    
@@ -63,6 +58,7 @@ public class App {
             System.out.print("Ingresar la opcion del menu: ");
             numeroMenu=leer.nextByte();
         }
+        leer.close();
 
     }
     
