@@ -1,14 +1,16 @@
 package Ejemplos;
-import java.util.Arrays;
+import java.util.Random;
 public class ComplejidadLineal {
     public void metodoComplejidadLineal(){
-        int sum = 0;
-        int [] arreglo1 = {1,3,5,6,2,8};
-        System.out.println(Arrays.toString(arreglo1));
+        Random random = new Random();
+        int tamaño = 1000000;
+        int [] arreglo1 = new int[tamaño];
+        for (int i = 0; i<arreglo1.length;i++){
+            arreglo1[i] = random.nextInt(10);
+        }
         //El tiempo de ejecucion aumenta cada vez tengamos mas datos
         for (int i = 0; i < arreglo1.length;i++){
-             sum += arreglo1[i];
+             System.out.println(arreglo1[i]);
         }
-        System.out.println(sum);
     }
 }
