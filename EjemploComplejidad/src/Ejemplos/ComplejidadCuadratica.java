@@ -9,11 +9,11 @@ public class ComplejidadCuadratica {
         // El tiempo aumenta al cuadrado del tamaño de entrada, frecuente en algoritmos ineficientes
         // Usualmente se usa con bucles anidados 
         for ( int i = 0 ; i < arreglo.length; i++){
-            for (int j = 0; j <arreglo.length-i-1; j++){
-                if (arreglo [j] > arreglo [j+1]){
-                    int temp = arreglo[j];
-                    arreglo [j] = arreglo[j+1];
-                    arreglo [j+1] = temp;
+            for (int j = 1 + i; j <arreglo.length; j++){
+                if (arreglo [i] > arreglo [j]){
+                    int temp = arreglo[i];
+                    arreglo [i] = arreglo[j];
+                    arreglo [j] = temp;
                 }
             }
         }
